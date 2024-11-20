@@ -26,10 +26,10 @@ class MultiqcModule(BaseMultiqcModule):
         if len(yleaf_data) == 0:
             raise ModuleNoSamplesFound
 
-        log.info(f"Found {len(yleaf)} Yleaf reports")
+        log.info(f"Found {len(yleaf_data)} Yleaf reports")
 
         # Write data to file
-        self.write_data_file(yleaf, "multiqc_yleaf")
+        self.write_data_file(yleaf_data, "multiqc_yleaf")
 
         self.add_software_version(None)
 
