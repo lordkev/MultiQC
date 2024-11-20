@@ -1002,3 +1002,6 @@ xenome:
 xengsort:
   contents: "# Xengsort classify"
   num_lines: 2
+yleaf:
+  contents: "Sample_name  Hg	Hg_marker	Total_reads	Valid_markers	QC-score	QC-1	QC-2	QC-3"
+  num_lines: 2
