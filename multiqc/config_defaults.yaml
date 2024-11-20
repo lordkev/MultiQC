@@ -407,6 +407,7 @@ module_order:
   - lima
   - peddy
   - haplocheck
+  - yleaf
   - somalier
   - methylqa
   - mosdepth

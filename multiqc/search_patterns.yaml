@@ -385,8 +385,7 @@ goleft_indexcov/ped:
 gopeaks:
   fn: "*_gopeaks.json"
 haplocheck:
-  contents: '"Sample"	"Contamination Status"	"Contamination Level"	"Distance"	"Sample Coverage"'
-  num_lines: 10
+  fn: "*contamination.txt"
 happy:
   fn: "*.summary.csv"
   contents: "Type,Filter,TRUTH"
@@ -1003,5 +1002,4 @@ xengsort:
   contents: "# Xengsort classify"
   num_lines: 2
 yleaf:
-  contents: "Sample_name  Hg	Hg_marker	Total_reads	Valid_markers	QC-score	QC-1	QC-2	QC-3"
-  num_lines: 2
+  fn: "*.hg"
