@@ -1,3 +1,3 @@
-from .haplocheck import MultiqcModule
+from .yleaf import MultiqcModule
 
 __all__ = ["MultiqcModule"]
