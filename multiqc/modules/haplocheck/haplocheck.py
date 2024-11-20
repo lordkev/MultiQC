@@ -19,7 +19,7 @@ class MultiqcModule(BaseMultiqcModule):
 
         for f in self.find_log_files("haplocheck"):
             parsed_data = self.parse_logs(f)
-            haplocheck_data[f["s_name"]] = parsed_data
+            haplocheck_data.update(parsed_data)
 
         haplocheck_data = self.ignore_samples(haplocheck_data)
 

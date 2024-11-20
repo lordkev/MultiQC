@@ -19,11 +19,11 @@ class MultiqcModule(BaseMultiqcModule):
 
         for f in self.find_log_files("yleaf"):
             parsed_data = self.parse_logs(f)
-            yleaf_data[f["s_name"]] = parsed_data
+            yleaf_data.update(parsed_data)
 
         yleaf_data = self.ignore_samples(yleaf_data)
 
-        if len(yleaf) == 0:
+        if len(yleaf_data) == 0:
             raise ModuleNoSamplesFound
 
         log.info(f"Found {len(yleaf)} Yleaf reports")
