@@ -18,7 +18,8 @@ class MultiqcModule(BaseMultiqcModule):
         yleaf_data: Dict = dict()
 
         for f in self.find_log_files("yleaf"):
-            yleaf_data = self.parse_logs(f)
+            parsed_data = self.parse_logs(f)
+            yleaf_data[f["s_name"]] = parsed_data
 
         yleaf_data = self.ignore_samples(yleaf_data)
 
