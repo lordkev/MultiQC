@@ -110,7 +110,6 @@ class MultiqcModule(BaseMultiqcModule):
 
         for header in headers.values():
             header["hidden"] = True
-        headers["Contamination Status"]["hidden"] = False
         headers["Hg"]["hidden"] = False
         headers["Valid_markers"]["hidden"] = False
         headers["QC-score"]["hidden"] = False
