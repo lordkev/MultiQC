@@ -61,6 +61,30 @@ class MultiqcModule(BaseMultiqcModule):
                 "scale": "Blues",
                 "format": "{:,.0f}",
             },
+            "Major Haplogroup": {
+                "title": "Major Haplogroup",
+                "description": "Major haplogroup of the sample.",
+                "scale": False,
+            },
+            "Major Haplogroup Quality": {
+                "title": "Major Haplogroup Quality",
+                "description": "Quality score of the major haplogroup.",
+                "min": 0,
+                "scale": "Reds",
+                "format": "{:,.2f}",
+            },
+            "Minor Haplogroup": {
+                "title": "Minor Haplogroup",
+                "description": "Minor haplogroup of the sample.",
+                "scale": False,
+            },
+            "Minor Haplogroup Quality": {
+                "title": "Minor Haplogroup Quality",
+                "description": "Quality score of the minor haplogroup.",
+                "min": 0,
+                "scale": "Reds",
+                "format": "{:,.2f}",
+            },
         }
 
         self.add_section(

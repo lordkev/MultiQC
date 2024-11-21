@@ -45,11 +45,6 @@ class MultiqcModule(BaseMultiqcModule):
                 "description": "Y-chromosomal haplogroup marker.",
                 "scale": False,
             },
-            "Hg_marker": {
-                "title": "Haplogroup Marker",
-                "description": "Y-chromosomal haplogroup marker.",
-                "scale": False,
-            },
             "Total_reads": {
                 "title": "Total Reads",
                 "description": "Total number of reads.",
